@@ -1,0 +1,220 @@
+{
+  "customer": {
+    "cw_dum_id": "dumc1",
+    "name": "Mahive",
+    "buildings": [
+      {
+        "bd_dum_id": "dumbu1",
+        "name": "Aash1",
+        "floors": [
+          {
+            "flr_dum_id": "dumf1",
+            "name": "1st Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "flr_dum_id": "dumf2",
+            "name": "1st Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bd_dum_id": "dumbu2",
+        "name": "Aash2",
+        "floors": [
+          {
+            "flr_dum_id": "dumf1",
+            "name": "1st Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "flr_dum_id": "dumf2",
+            "name": "1st Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

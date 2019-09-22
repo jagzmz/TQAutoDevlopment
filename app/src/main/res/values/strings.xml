@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TQ Autom</string>
+    <string name="login_hint_user">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="buttonLoginText">Login</string>
+    <string name="SP_USER">USER_SESS_DATA</string>
+    <string name="SP_USER_DATA">USER_DATA</string>
 </resources>

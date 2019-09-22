@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "success": true,
+    "sessId": "123abc",
+    "cusId": "1234"
+  }
+}
