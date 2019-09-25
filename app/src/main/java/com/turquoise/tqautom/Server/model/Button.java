@@ -1,19 +1,20 @@
-
 package com.turquoise.tqautom.Server.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-class Button {
+public class Button {
 
     @SerializedName("but_dum_id")
     @Expose
     private String butDumId;
+    @SerializedName("but_status")
+    @Expose
+    private String butStatus;
     @SerializedName("but_alias")
     @Expose
     private String butAlias;
 
-    @SuppressWarnings("unused")
     public String getButDumId() {
         return butDumId;
     }
@@ -22,11 +23,18 @@ class Button {
         this.butDumId = butDumId;
     }
 
+    public String getButStatus() {
+        return butStatus;
+    }
+
+    public void setButStatus(String butStatus) {
+        this.butStatus = butStatus;
+    }
+
     public String getButAlias() {
         return butAlias;
     }
 
-    @SuppressWarnings("unused")
     public void setButAlias(String butAlias) {
         this.butAlias = butAlias;
     }

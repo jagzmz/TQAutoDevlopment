@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/buttonCard"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardCornerRadius="6dp"
+    android:clipToPadding="false"
+    app:cardElevation="4dp"
+    android:animateLayoutChanges="true"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:id="@+id/colorStatus"
+                android:layout_margin="10dp"
+                android:background="@color/buttonOff"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/buttonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/andika"
+                android:text="buttonName"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/roomName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/andika"
+                android:text="roomName"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/floorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/andika"
+                android:text="floorName"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+

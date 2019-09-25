@@ -6,7 +6,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @SuppressWarnings("unused")
-class Floor {
+public class Floor {
 
     @SerializedName("flr_dum_id")
     @Expose

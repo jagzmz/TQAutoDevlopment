@@ -6,7 +6,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,8 +55,11 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
     public void onLoginResult(Result result) {
         if (result != null && progressDialog != null) {
             loginController.setProgressBarVisibility(View.INVISIBLE);
-            Toast.makeText(this, String.valueOf(result.getAuth().getSessId()), Toast.LENGTH_LONG).show();
+//            Toast.makeText(this, String.valueOf(result.getAuth().getSessId()), Toast.LENGTH_LONG).show();
             loginController.setSession(result);
+            Intent i= new Intent(LoginActivity.this,MainActivity.class);
+            startActivity(i);
+            finish();
         }
     }
 

@@ -1,6 +1,7 @@
 package com.turquoise.tqautom.Server;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.turquoise.tqautom.Server.controller.ServerController;
 import com.turquoise.tqautom.Server.model.Building;
@@ -15,7 +16,7 @@ public class ServerUtil implements IServerView {
 
     private final ServerController serverController;
     private final Context ctx;
-
+    private Result result;
 
     public ServerUtil(Context ctx){
         this.ctx=ctx;
@@ -24,6 +25,11 @@ public class ServerUtil implements IServerView {
 
     public void getData(){
         serverController.doFetchData();
+
+    }
+
+    public List<Building> getBuildings(){
+        return result.getCustomer().getBuildings();
     }
 
 
@@ -33,12 +39,11 @@ public class ServerUtil implements IServerView {
             Notif.showToast(ctx,"Result is Null");
         }
         else{
-            List<Building> buildings=result.getCustomer().getBuildings();
-            StringBuilder name= new StringBuilder();
-            for(Building b:buildings){
-                name.append(b.getName()).append("\n");
-            }
-            Notif.showToast(ctx, name.toString());
+            Log.d("ServerUtil", "onDataRecieved: "+result.getCustomer().getBuildings());
+            this.result=result;
         }
     }
+
+
+
 }

@@ -6,7 +6,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @SuppressWarnings("unused")
-class SwitchBoard {
+public class SwitchBoard {
 
     @SerializedName("sw_dum_id")
     @Expose

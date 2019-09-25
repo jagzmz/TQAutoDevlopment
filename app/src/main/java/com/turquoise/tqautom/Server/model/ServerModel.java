@@ -2,6 +2,7 @@ package com.turquoise.tqautom.Server.model;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.google.gson.Gson;
 import com.turquoise.tqautom.R;
@@ -28,14 +29,17 @@ public class ServerModel implements IServerModel {
 
         SharedPreferences sp= ctx.getSharedPreferences(ctx.getString(R.string.SP_USER),Context.MODE_PRIVATE);
 
-        if(sp.contains(ctx.getString(R.string.SP_USER_DATA))){
-            return getJson(sp.getString(ctx.getString(R.string.SP_USER_DATA),""));
-        }
+//        if(sp.contains(ctx.getString(R.string.SP_USER_DATA))){
+//            return getJson(sp.getString(ctx.getString(R.string.SP_USER_DATA),""));
+//        }
 
         Gson gson= new Gson();
         try {
             BufferedReader br=new BufferedReader(new InputStreamReader(ctx.getAssets().open("userData.json")));
-            return gson.fromJson(br, Result.class);
+            Result result;
+            result=gson.fromJson(br,Result.class);
+            Log.d("ServerModel", "getData: "+result.getCustomer().getBuildings().size());
+            return result;
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -56,6 +60,7 @@ public class ServerModel implements IServerModel {
         Gson gson= new Gson();
         String data=gson.toJson(result);
         SharedPreferences.Editor spe= ctx.getSharedPreferences(USER_SESS,Context.MODE_PRIVATE).edit();
+
         spe.putString(ctx.getString(R.string.SP_USER_DATA),data);
         spe.apply();
     }
