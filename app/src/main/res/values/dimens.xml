@@ -2,5 +2,7 @@
 <resources>
     <dimen name="layout_padding">15dp</dimen>
     <dimen name="item_offset">10dp</dimen>
+    <dimen name="item_offset1">8dp</dimen>
+
 
 </resources>

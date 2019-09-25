@@ -54,8 +54,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         if (!defaultButton) {
             lastCheckBox = holder.rButton;
-            defaultButton = !defaultButton;
-            lastCheckBox.setChecked(defaultButton);
+            defaultButton = true;
+            lastCheckBox.setChecked(true);
 //            holder.setPos(position);
         }
 
