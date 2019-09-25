@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -15,7 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.turquoise.tqautom.Buildings.CustomAdapter;
 import com.turquoise.tqautom.Buttons.ButtonAdapter;
-import com.turquoise.tqautom.Buttons.GridMapping;
+import com.turquoise.tqautom.Floors.FloorInterfaceMapping;
+import com.turquoise.tqautom.Floors.FloorAdapter;
 import com.turquoise.tqautom.Server.ServerUtil;
 import com.turquoise.tqautom.Server.model.Building;
 import com.turquoise.tqautom.Server.model.Button;
@@ -43,35 +43,52 @@ public class MainActivity extends AppCompatActivity {
         this.serverUtil = new ServerUtil(context);
         serverUtil.getData();
         inflater = LayoutInflater.from(context);
-//        Notif.showToast(context,String.valueOf(serverUtil.getBuildings().size()));
+
         askForBuilding();
 
     }
 
-    private void fillButtons() {
-        List<Floor> floors = new ArrayList<>();
-        List<GridMapping> mappings= new ArrayList<>();
+    private void fillFloors(){
+        List<FloorInterfaceMapping> mappings= new ArrayList<>();
         for (Floor floor : building.getFloors()) {
-            for (Room room : floor.getRooms()) {
-                for (SwitchBoard switchBoard : room.getSwitchBoards()) {
-                    for(Button button:switchBoard.getButtons()){
-                        mappings.add(new GridMapping(floor,room,button));
-                        Log.d("Grid", "fillButtons: "+mappings.get(mappings.size()-1).print());
-                    }
-                }
-            }
+            mappings.add(new FloorInterfaceMapping(floor));
         }
 
-        ButtonAdapter buttonAdapter = new ButtonAdapter(context);
-        buttonAdapter.setMappings(mappings);
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new GridLayoutManager(context,2));
-        RecyclerDecoration recyclerDecoration=new RecyclerDecoration(context,R.dimen.item_offset);
-        recyclerView.addItemDecoration(recyclerDecoration);
-        recyclerView.setAdapter(buttonAdapter);
+        FloorAdapter floorAdapter=new FloorAdapter(context);
+        floorAdapter.setFloors(mappings);
+        floorAdapter.setHasStableIds(true);
 
+        RecyclerView recyclerView=findViewById(R.id.common_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setAdapter(floorAdapter);
 
     }
+
+//    private void fillButtons() {
+//        List<Floor> floors = new ArrayList<>();
+//        List<FloorInterfaceMapping> mappings= new ArrayList<>();
+//        for (Floor floor : building.getFloors()) {
+//            for (Room room : floor.getRooms()) {
+//                for (SwitchBoard switchBoard : room.getSwitchBoards()) {
+//                    for(Button button:switchBoard.getButtons()){
+////                        mappings.add(new FloorInterfaceMapping(floor,room,button));
+////                        Log.d("Grid", "fillButtons: "+mappings.get(mappings.size()-1).print());
+//                    }
+//                }
+//            }
+//        }
+//
+//        ButtonAdapter buttonAdapter = new ButtonAdapter(context, buttonClickListener);
+//        buttonAdapter.setMappings(mappings);
+//        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+//        recyclerView.setLayoutManager(new GridLayoutManager(context,2,GridLayoutManager.HORIZONTAL,false));
+//        RecyclerDecoration recyclerDecoration=new RecyclerDecoration(context,R.dimen.item_offset);
+//        recyclerView.addItemDecoration(recyclerDecoration);
+//        recyclerView.setAdapter(buttonAdapter);
+//
+//
+//    }
 
     private void askForBuilding() {
 
@@ -104,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void populate() {
         if (building != null) {
-            fillButtons();
+            fillFloors();
         }
     }
 
