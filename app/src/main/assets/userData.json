@@ -1,0 +1,244 @@
+{
+  "customer": {
+    "cw_dum_id": "dumc1",
+    "name": "Mahesh",
+    "buildings": [
+      {
+        "bd_dum_id": "dumbu1",
+        "name": "Aashray",
+        "floors": [
+          {
+            "flr_dum_id": "dumf1",
+            "name": "1st Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_status": "0",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_status": "0",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_status": "0",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_status": "0",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC",
+                        "but_status": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "flr_dum_id": "dumf2",
+            "name": "2nd Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_status": "0",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_status": "0",
+                        "but_alias": "Light"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_status": "0",
+                        "but_alias": "AC"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_status": "0",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC",
+                        "but_status": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bd_dum_id": "dumbu2",
+        "name": "Aashray",
+        "floors": [
+          {
+            "flr_dum_id": "dumf1",
+            "name": "1st Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_status": "0",
+                        "but_alias": "Fan"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC",
+                        "but_status": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC",
+                        "but_status": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "flr_dum_id": "dumf2",
+            "name": "2nd Floor",
+            "rooms": [
+              {
+                "name": "Bedroom",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums1",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC",
+                        "but_status": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Living Room",
+                "switch_boards": [
+                  {
+                    "sw_dum_id": "dums2",
+                    "buttons": [
+                      {
+                        "but_dum_id": "dumb1",
+                        "but_alias": "Fan",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb2",
+                        "but_alias": "Light",
+                        "but_status": "0"
+                      },
+                      {
+                        "but_dum_id": "dumb3",
+                        "but_alias": "AC",
+                        "but_status": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
